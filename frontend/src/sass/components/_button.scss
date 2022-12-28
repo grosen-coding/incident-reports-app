@@ -12,27 +12,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
 
-                            @include respond(tab-port) {
-                            
-                                font-size: 1.5rem;
-                                padding: 5px 10px;
-                              }
+      @include respond(tab-port) {
+          font-size: 1.5rem;
+          padding: 5px 10px;
+        }
 }
 
 .btn svg {
   margin-right: 8px;
 
-                            @include respond(tab-port) {
-                            
-                                font-size: 2rem;
-                              }
+    @include respond(tab-port) {
+        font-size: 2rem;
+    }
 
-                                                            @include respond(phone) {
-                              
-                                                              font-size: 2.5rem;
-                              
-                                                            }
+    @include respond(phone) {
+        font-size: 2.5rem;                   
+      }
 }
 
 .btn-reverse {
@@ -43,35 +40,35 @@
 .btn-block {
   width: 100%;
   margin-bottom: 20px;
-  
-
 }
 
 .btn-reports {
             
-                              @include respond(tab-port) {
-                              
-                                  font-size: 1.8rem;
-                                    padding: 10px 15px;
-                                    // display: flex;
-                                    // width: 100%;
-                                }
+        @include respond(tab-port) {                 
+            font-size: 1.8rem;
+            padding: 10px 15px;
+}
 
-                                                                                                                            @include respond(phone) {
-                                                              
-                                                                                                                              font-size: 1.8rem;
-                                                                                                                              padding: 10px 25px;
-                                                                                                                              min-width: 95vw;
-                                                                                                                              // margin: auto;
-                                                                                                    
-                                                                                                                              // display: block;
-                                                                                                                            
-                                                                                                                            }
+        @include respond(phone) {                                                             
+        font-size: 1.8rem;
+        padding: 10px 25px;
+        min-width: 95vw;
+  }
 }
 
 .btn-sm {
   padding: 5px 15px;
   font-size: 13px;
+}
+
+.btn-view-report {
+    &:hover {
+        outline: 1px solid rgb(63, 174, 76);
+      }
+
+  @include respond(phone) {
+    padding: 5px;
+  }
 }
 
 .btn-danger {
@@ -83,6 +80,11 @@
 .btn-back {
   width: 150px;
   margin-bottom: 20px;
+  margin-left: 5px;
+
+  &:hover {
+    outline: 1px solid rgb(63, 174, 76);
+  }
 }
 
 .btn:hover {
@@ -116,15 +118,14 @@
     cursor: pointer;
     text-align: center;
     width: 20rem;
-    // display: inline-block;
     margin: auto 5px;
     transition: 0.3s;
     text-transform: uppercase;
 
-                @include respond(tab-port) {
-                            font-size: 1.8rem;
-                              padding: 8px 15px;
-                  }
+    @include respond(tab-port) {
+        font-size: 1.8rem;
+        padding: 8px 15px;
+      }
 
     @include respond(phone) {
         font-size: 1.2rem;
@@ -132,14 +133,12 @@
       }
 
       &-new-post:hover {
-
-                        color: #333;
-                        background-color: #fff;
-                        border: 2px solid rgb(63, 174, 76);
-                        transform: scale(1.05) translateY(-.3rem);
-                        box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5);
-                        font-weight: 600;
-                      
+        color: #333;
+        background-color: #fff;
+        border: 2px solid rgb(63, 174, 76);
+        transform: scale(1.05) translateY(-.3rem);
+        box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5);
+        font-weight: 600;
       }
 
     span {

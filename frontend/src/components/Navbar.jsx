@@ -15,11 +15,11 @@ const Navbar = () => {
     <>
             <Nav className='navbar' showNav={showNav}>
             <ul className='navbar-links'>
-                <li><Link to="/" onClick={() => setShowNav((prev) => !prev)}>Home</Link></li>
-                <li><Link to="/about" onClick={() => setShowNav((prev) => !prev)}>About</Link></li>
-                <li><Link to="/blog" onClick={() => setShowNav((prev) => !prev)}>Blog</Link></li>
-                <li><Link to="/breed" onClick={() => setShowNav((prev) => !prev)}>Breed info</Link></li>
-                <li>  {client && <Link to="/reports" onClick={() => setShowNav((prev) => !prev)}>Reports</Link>}</li>
+                <li className='nav-link-side'><Link to="/" onClick={() => setShowNav((prev) => !prev)}>Home</Link></li>
+                <li className='nav-link-side'><Link to="/about" onClick={() => setShowNav((prev) => !prev)}>About</Link></li>
+                <li className='nav-link-side'><Link to="/blog" onClick={() => setShowNav((prev) => !prev)}>Blog</Link></li>
+                <li className='nav-link-side'><Link to="/breed" onClick={() => setShowNav((prev) => !prev)}>Breed info</Link></li>
+                {client && <li className='nav-link-side'>  <Link to="/reports" onClick={() => setShowNav((prev) => !prev)}>Reports</Link></li>}
             </ul>
 
         </Nav>

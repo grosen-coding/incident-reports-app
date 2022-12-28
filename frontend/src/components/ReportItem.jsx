@@ -11,7 +11,7 @@ function ReportItem({report}) {
         <div className={`status status-${report.status}`}>
             {report.status}
         </div>
-        <Link to={`/report/${report._id}`} className="btn btn-reverse btn-sm">View</Link>
+        <Link to={`/report/${report._id}`} className="btn btn-reverse btn-view-report">View</Link>
     </div>
   )
 }

@@ -73,7 +73,9 @@ h4 {
   }
 
   &--nine-sm {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    top: 0.5rem;
         color: $color-primary;
   }
 }

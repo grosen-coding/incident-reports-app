@@ -33,6 +33,7 @@ const BlogMainPage = () => {
           <div className="blog-main">
             <h1 className="blog-title">The Dog Blog</h1>
 
+            <p className="blog-text">Keep up on the most recent news, interesting training tips, and even fun stories by following the <strong>K<span className='logo--nine-sm'>9</span>PAWS</strong> blog! Add your own story, advice, or even a general tip to help continue educating and entertaining our community of clients. </p>
 
             
             <div className="blog-posts-container">

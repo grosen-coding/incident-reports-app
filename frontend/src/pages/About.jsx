@@ -11,14 +11,7 @@ function About() {
         <div className="about--content">
 
 
-    <h2>More info to come...</h2>
-          {/* <div className="about--content-left">
-            <h3 className="about--title-sub">left side</h3>
-          </div>
-
-          <div className="about--content-right">
-            <h3 className="about--title-sub">right side</h3>
-          </div> */}
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas dolore totam illum doloremque, minima similique exercitationem fugit nulla tempora, odit consequuntur. Eos error odit quos necessitatibus ex sequi facere dolor beatae laborum iure eveniet quidem, eum ea animi incidunt atque cum dignissimos earum suscipit possimus, sapiente perspiciatis minima saepe corrupti!</p>
 
         </div>
 

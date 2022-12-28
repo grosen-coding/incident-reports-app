@@ -28,15 +28,12 @@ function Header() {
             <nav className='header-nav'>
 
                 <div className="header-nav__left">
-
-
-
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/blog">Blog</Link></li>
-                        <li><Link to="/breed">Breed info</Link></li>
-                        <li>  {client && <Link to="/reports">Reports</Link>}</li>
+                        <li className='nav-link'><Link to="/">Home</Link></li>
+                        <li className='nav-link'><Link to="/about">About</Link></li>
+                        <li className='nav-link'><Link to="/blog">Blog</Link></li>
+                        <li className='nav-link'><Link to="/breed">Breed info</Link></li>
+                        {client && <li className='nav-link'>  <Link to="/reports">Reports</Link></li>}
                     </ul>
                 </div>
 

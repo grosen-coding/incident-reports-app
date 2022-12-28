@@ -47,7 +47,7 @@ function MainReportsPage() {
         <div className="breed-info--container">
           <div className="breed-info--search">
             <h1 className="breed-info--title-main">Breed search</h1>
-            <p className="breed-info--title-sub">Welcome to the Breed Information API. Type in any keyword below (breed name, country, breed traits or personality traits, etc...) to learn more about all dog breeds! </p>
+            <p className="breed-info--title-sub">Welcome to the Breed Information API. We often are asked many questions about breeds, usually about which is "best" to either adopt or purchase as a puppy. We always encourage you to do as much of your own research as possible, from many different - trusted - sources, but please feel free to type in any keyword below (breed name, country, breed traits or personality traits, etc...) to learn more your breed of interest! Click on or hover-over the image to reveal traits about each breed.</p>
 
             <div className="breed-info--search-form form">
               <form

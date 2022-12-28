@@ -9,7 +9,8 @@ function MainReportsPage() {
             <div className="main-reports-container">
                 <div className="main-reports-heading">
                     <h1><strong>K<span className='logo--nine'>9</span>PAWS</strong> Progress Reporting</h1>
-                    <p>Please choose from an option below</p>
+                    <p>Congratulations and Welcome on joining the <strong>K<span className='logo--nine-sm'>9</span>PAWS</strong> training team! The most efficient way of achieving success through our training program is by tracking your progress. Our reporting system allows you to keep a detailed record of the progress we make throughout our journey, and allows our trainers to quickly address, and respond to, your reports.</p>
+                    <p>Remember to always call us with any questions while you're becoming familiar with how the reporting system works.</p>
                 </div>
 
                 <div className='main-reports-buttons'>
