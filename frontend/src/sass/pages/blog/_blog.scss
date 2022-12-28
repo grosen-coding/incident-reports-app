@@ -1,7 +1,14 @@
 .blog {
+    height: 100%;
+    width: 100%;
+    margin-top: 70px;
 
     &-main {
-        width: 75%;
+        width: 85%;
+
+        @include respond(phone) {
+                margin-top: 50px;
+            }
 
         @include centering-hack;
     }
@@ -19,6 +26,10 @@
             font-weight: 500;
             margin-bottom: -3rem;
             color: #555;
+            
+            @include respond(phone) {
+                    line-height: 1.2;
+                }
         }
     }
 
@@ -28,6 +39,10 @@
         width: 100%;
         margin: 5rem 0;
         justify-content: space-between;
+
+                    @include respond(phone) {
+                            flex-direction: column;
+                        }
 
     }  
     
@@ -41,6 +56,12 @@
         transition: 0.5s;
         overflow: hidden;
         box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7);
+
+                    @include respond(phone) {
+                            height: 15rem;
+                            width: 22rem;
+                            margin: 10px auto;
+                        }
 
         &:hover {
             transform: scale(1.2);
@@ -56,16 +77,37 @@
         &:hover &--title {
             top: 3rem;
             font-weight: 800;
+
+            @include respond(phone) {
+                    top: 1rem;
+                }
         }
 
         &:hover &--author {
             bottom: 12rem;
             opacity: 1;
+
+            @include respond(tab-port) {
+                    bottom: 14rem;
+                }
+
+            @include respond(phone) {
+                    bottom: 8rem;
+                }
         }
 
         &:hover &--category {
             bottom: 9rem;
             opacity: 1;
+
+                        @include respond(tab-port) {
+                                bottom: 11rem;
+                                line-height: 1.2;
+                            }
+
+            @include respond(phone) {
+                    bottom: 6rem;
+                }
         }
 
         &:hover .card-btn {
@@ -104,6 +146,10 @@
             line-height: 1;
             font-size: 1.4rem;
             padding: 0 .6rem;
+
+            @include respond(phone) {
+                    top: 8rem;
+                }
         }
 
         &--author {
@@ -146,6 +192,20 @@
             text-align: center;
             backface-visibility: hidden;
             transition: 0.3s;
+                            @include respond(tab-land) {
+                                                    padding: 5px 10px;
+                                                        font-size: 1.6rem;
+                                }
+
+                        @include respond(tab-port) {
+                                                    padding: 5px 10px;
+                                                        font-size: 1.3rem;
+                            }
+
+            @include respond(phone) {
+                    padding: 5px 10px;
+                    font-size: 1rem;
+                }
 
             &:hover {
                 color: #333;

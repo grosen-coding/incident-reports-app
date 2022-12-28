@@ -10,6 +10,10 @@
         .form-group {
             width: 60%;
             margin: 0 auto;
+
+                        @include respond(phone) {
+                                width: 100%;
+                            }
         }
     }
     }

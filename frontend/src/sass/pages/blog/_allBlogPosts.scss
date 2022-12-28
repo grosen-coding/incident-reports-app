@@ -49,6 +49,10 @@
                 width: 50%;
                 margin: 0 auto;
                 margin-top: 2rem;
+
+                                @include respond(tab-port) {
+                                        width: 100%;
+                                    }
             }
         }
 
@@ -60,6 +64,9 @@
             .form-group {
                     width: 50%;
                     margin: 0 auto;
+                                                    @include respond(tab-port) {
+                                                            width: 100%;
+                                                        }
                 }
 
             button {
