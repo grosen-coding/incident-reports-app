@@ -1,7 +1,7 @@
 .blog {
 
     &-main {
-        width: 55%;
+        width: 75%;
 
         @include centering-hack;
     }
@@ -36,6 +36,7 @@
         width: 20rem;
         height: 23rem;
         border-radius: 1rem;
+        margin: 20px;
         position: relative;
         transition: 0.5s;
         overflow: hidden;
@@ -176,6 +177,7 @@
                 box-shadow: 0 0 2rem rgba(0, 0, 0, 0.7);
                 border: 1px solid #333;
                 padding: 2rem 5rem;
+                min-width: 90%;
 }
 
 .blog-buttons {

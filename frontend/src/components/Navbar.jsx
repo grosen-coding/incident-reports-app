@@ -6,7 +6,7 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 import styled from 'styled-components'
 
 const Navbar = () => {
-          const [showNav, setShowNav] = useState(false);
+          const [showNav, setShowNav] = useState(true);
 
 
     const {client} = useSelector((state) => state.auth)
