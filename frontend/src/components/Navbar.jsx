@@ -3,19 +3,17 @@ import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { useState } from 'react'
 import {GiHamburgerMenu} from 'react-icons/gi'
+import styled from 'styled-components'
 
 const Navbar = () => {
-          const [showNav, setShowNav] = useState(true);
-
-          
+          const [showNav, setShowNav] = useState(false);
 
 
     const {client} = useSelector((state) => state.auth)
 
   return (
     <>
-        <div className='nav-toggle' onClick={() => setShowNav((prev) => !prev)}><GiHamburgerMenu /></div>
-            {showNav ? (<nav className='navbar' showNav={showNav}>
+            <Nav className='navbar' showNav={showNav}>
             <ul className='navbar-links'>
                 <li><Link to="/" onClick={() => setShowNav((prev) => !prev)}>Home</Link></li>
                 <li><Link to="/about" onClick={() => setShowNav((prev) => !prev)}>About</Link></li>
@@ -24,8 +22,9 @@ const Navbar = () => {
                 <li>  {client && <Link to="/reports" onClick={() => setShowNav((prev) => !prev)}>Reports</Link>}</li>
             </ul>
 
-        </nav>) : null}
-        
+        </Nav>
+                <div className='nav-toggle'  onClick={() => setShowNav((prev) => !prev)}><GiHamburgerMenu /></div>
+
     </>
 
 
@@ -33,3 +32,9 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+const Nav = styled.div`
+
+  transform: ${(props) => (props.showNav ? "translateX(-100%)" : "translateX(0)")};
+  transition: transform 0.3s ease-in-out;
+  `
