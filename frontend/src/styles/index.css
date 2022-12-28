@@ -1150,6 +1150,20 @@ h4 {
 }
 
 .main-reports-container {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 12rem;
 }
 .main-reports-container .btn-block {
@@ -1173,6 +1187,9 @@ h4 {
 }
 .main-reports-heading h1 {
   margin-bottom: 3rem;
+}
+.main-reports-buttons {
+  width: 95vw;
 }
 
 .report-page {
@@ -1299,9 +1316,25 @@ h4 {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media only screen and (max-width: 768px) {
+  .btn {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+  }
+}
 
 .btn svg {
   margin-right: 8px;
+}
+@media only screen and (max-width: 768px) {
+  .btn svg {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .btn svg {
+    font-size: 2.5rem;
+  }
 }
 
 .btn-reverse {
@@ -1312,6 +1345,20 @@ h4 {
 .btn-block {
   width: 100%;
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-reports {
+    font-size: 1.8rem;
+    padding: 10px 15px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .btn-reports {
+    font-size: 1.8rem;
+    padding: 10px 25px;
+    min-width: 95vw;
+  }
 }
 
 .btn-sm {

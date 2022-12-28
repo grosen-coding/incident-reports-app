@@ -1,6 +1,12 @@
 .main-reports {
     &-container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding-top: 12rem;
+
 
             .btn-block {
                 width: 50%;
@@ -33,6 +39,10 @@
         h1 {
             margin-bottom: 3rem;
         }
+    }
+
+    &-buttons {
+        width: 95vw;
     }
 }
 

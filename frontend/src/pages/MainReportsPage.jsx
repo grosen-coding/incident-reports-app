@@ -12,13 +12,15 @@ function MainReportsPage() {
                     <p>Please choose from an option below</p>
                 </div>
 
-                <Link to="/reports/new-report" className='btn btn-reverse btn-block'>
-                    <FaPaw /> Create New Report
-                </Link>
+                <div className='main-reports-buttons'>
+                    <Link to="/reports/new-report" className='btn btn-reverse btn-block btn-reports'>
+                        <FaPaw /> Create New Report
+                    </Link>
 
-                <Link to="/reports/current-reports" className='btn btn-block'>
-                    <FaRegListAlt /> View My Current Reports
-                </Link>
+                    <Link to="/reports/current-reports" className='btn btn-block btn-reports'>
+                        <FaRegListAlt /> View My Current Reports
+                    </Link>
+                </div>
             </div>
         </section>
     )
