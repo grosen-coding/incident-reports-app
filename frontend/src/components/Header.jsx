@@ -2,8 +2,16 @@ import {FaSignInAlt, FaSignOutAlt, FaUser} from 'react-icons/fa';
 import {Link, useNavigate } from 'react-router-dom';
 import {useSelector, useDispatch} from 'react-redux'
 import {logout, reset} from '../features/auth/authSlice'
+import Navbar from './Navbar';
+import { useState } from 'react';
+
 
 function Header() {
+
+
+
+
+
     const navigate = useNavigate()
     const dispatch = useDispatch()
     const {client} = useSelector((state) => state.auth)
@@ -12,12 +20,22 @@ function Header() {
      dispatch(logout())
      dispatch(reset())
      navigate('/')
+
+     
  }
   return (
     <header className='header'>
+        
+        {/* Hamburger Menu */}
+        <Navbar />
+
         <div className="wrapper">
             <nav className='header-nav'>
+
                 <div className="header-nav__left">
+
+
+
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About</Link></li>

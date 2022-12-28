@@ -17,8 +17,13 @@
 
     &__left {
 
+      width: 80%;
       ul {
         display: flex;
+
+        @include respond(phone) {
+            display: none;
+          }
 
         li {
           padding: 0 1.5rem;
@@ -29,9 +34,10 @@
     }
 
     &__right {
-
+      width: 20%;
       ul {
         display: flex;
+        justify-content: flex-end;
 
         li {
           padding: 0 1rem;
